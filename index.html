@@ -22,57 +22,82 @@
   <section id="intro">
     <h2>🧑 Introducción</h2>
 
-    <div class="intro-tabs">
-      <button onclick="mostrarSeccion('estudios')">🎓 Estudios</button>
-      <button onclick="mostrarSeccion('experiencia')">💼 Experiencia</button>
-      <button onclick="mostrarSeccion('sobreMi')">🙋‍♂️ Sobre mí</button>
-    </div>
-
-    <div id="estudios" class="intro-content">
+    <div class="intro-block">
       <h3>🎓 Estudios</h3>
-      <p>Actualmente curso el Grado Superior en Administración de Sistemas Informáticos en Red (ASIR). También he realizado cursos complementarios de redes, Linux, y seguridad informática.</p>
+      <p>Actualmente curso el Grado Superior en Administración de Sistemas Informáticos en Red (ASIR). También he realizado cursos complementarios de redes, Linux y seguridad informática.</p>
     </div>
 
-    <div id="experiencia" class="intro-content" style="display: none;">
+    <div class="intro-block">
       <h3>💼 Experiencia Profesional</h3>
       <p>Trabajo como técnico de Help Desk, brindando soporte de primer nivel, resolviendo incidencias de hardware/software, y asistiendo en la configuración de sistemas y redes.</p>
     </div>
 
-    <div id="sobreMi" class="intro-content" style="display: none;">
+    <div class="intro-block">
       <h3>🙋‍♂️ Sobre mí</h3>
       <p>Soy una persona proactiva, curiosa por la tecnología y orientada a la mejora continua. Me interesa la administración de sistemas, la automatización con scripts, y la ciberseguridad.</p>
     </div>
   </section>
 
-  <section id="proyectos">
+  <section id="proyectos" style="display: none;">
     <h2>🚀 Proyectos</h2>
-    <ul>
-      <li><strong>Script de conexión remota:</strong> Automatiza la conexión a PCs usando PowerShell. [<a href="#">Ver en GitHub</a>]</li>
-      <li><strong>Monitor de red local:</strong> Script en Bash para comprobar latencia. [<a href="#">Ver en GitHub</a>]</li>
-      <li><strong>Inventario de equipos:</strong> Página web básica con HTML/CSS para registrar dispositivos IT. [<a href="#">Ver demo</a>]</li>
-    </ul>
+    <div id="proyectos-container">
+      <p>Cargando proyectos desde GitHub...</p>
+    </div>
   </section>
 
-  <section id="contacto">
-    <h2>📬 Contacta conmigo</h2>
-    <p>Puedes escribirme a: <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a></p>
-    <p>O visitar mis perfiles:</p>
-    <ul>
-      <li>LinkedIn: <a href="https://linkedin.com/in/tuperfil" target="_blank">tuperfil</a></li>
-      <li>GitHub: <a href="https://github.com/tuusuario" target="_blank">tuusuario</a></li>
-    </ul>
-  </section>
+<section id="contacto" style="display: none;">
+  <h2>📬 Contacta conmigo</h2>
+
+  <p>Completa el siguiente formulario haciendo clic en el botón. Se abrirá en una nueva pestaña:</p>
+
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeoIlNf25AF2BaubBfhNwSn_85U_s1AIEyGVY-sAdRhdIWPOw/viewform?usp=dialog" target="_blank">
+    <button class="btn-contacto">📨 Abrir Formulario</button>
+  </a>
+</section>
+
 
   <footer>
-    <p>© 2025 Tu Nombre – Portafolio Personal</p>
+    <p>© 2025 Raúl García Gómez – Portafolio Personal</p>
   </footer>
 
   <script>
-    function mostrarSeccion(id) {
-      const secciones = document.querySelectorAll('.intro-content');
-      secciones.forEach(sec => sec.style.display = 'none');
-      document.getElementById(id).style.display = 'block';
-    }
+    // Mostrar sección seleccionada desde el menú
+    const enlaces = document.querySelectorAll('nav a');
+    enlaces.forEach(enlace => {
+      enlace.addEventListener('click', function(e) {
+        e.preventDefault();
+        const id = this.getAttribute('href').substring(1);
+        document.querySelectorAll('section').forEach(sec => sec.style.display = 'none');
+        document.getElementById(id).style.display = 'block';
+      });
+    });
+
+    // Cargar proyectos desde GitHub
+    const usuarioGitHub = "raulgp21";
+    const contenedor = document.getElementById("proyectos-container");
+
+    fetch(`https://api.github.com/users/raulgg21/repos`)
+      .then(response => response.json())
+      .then(repos => {
+        contenedor.innerHTML = "";
+        repos
+          .filter(repo => !repo.fork)
+          .sort((a, b) => b.stargazers_count - a.stargazers_count)
+          .forEach(repo => {
+            const div = document.createElement("div");
+            div.className = "repo-card";
+            div.innerHTML = `
+              <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
+              <p>${repo.description || "Sin descripción"}</p>
+              <p><strong>Lenguaje:</strong> ${repo.language || "Desconocido"}</p>
+            `;
+            contenedor.appendChild(div);
+          });
+      })
+      .catch(error => {
+        contenedor.innerHTML = "<p>Error al cargar los proyectos.</p>";
+        console.error(error);
+      });
   </script>
 
 </body>
