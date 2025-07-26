@@ -3,9 +3,8 @@
 ¡Bienvenido/a a mi portafolio personal desarrollado con GitHub Pages!  
 Aquí muestro algunos de mis proyectos, aprendizajes y experiencia como estudiante de ASIR y técnico de Help Desk.
 
-🔗 **Sitio en vivo**: [https://raulgg21.github.io/Raul_Garcia_Gomez/](https://tuusuario.github.io)  
+🔗 **Sitio en vivo**: [https://raulgg21.github.io/Raul_Garcia_Gomez/](https://raulgg21.github.io/Raul_Garcia_Gomez/)  
 _(Reemplaza "tuusuario" con tu nombre de usuario real en GitHub)_
-
 ---
 
 ## 👨‍💻 Sobre mí
