@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi Portafolio - Técnico ASIR</title>
+  <title>Portafolio - Técnico ASIR</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header>
     <h1>👨‍💻 Tu Nombre</h1>
-    <p>Estudiante de ASIR y técnico de Help Desk</p>
+    <p>Estudiante de ASIR y Técnico de Help Desk</p>
   </header>
 
   <nav>
@@ -21,7 +21,27 @@
 
   <section id="intro">
     <h2>🧑 Introducción</h2>
-    <p>Soy estudiante del Grado Superior en Administración de Sistemas Informáticos en Red (ASIR) y actualmente trabajo como técnico de Help Desk. Me apasionan los sistemas, redes y la automatización. Este sitio muestra parte de mi trabajo y evolución profesional.</p>
+
+    <div class="intro-tabs">
+      <button onclick="mostrarSeccion('estudios')">🎓 Estudios</button>
+      <button onclick="mostrarSeccion('experiencia')">💼 Experiencia</button>
+      <button onclick="mostrarSeccion('sobreMi')">🙋‍♂️ Sobre mí</button>
+    </div>
+
+    <div id="estudios" class="intro-content">
+      <h3>🎓 Estudios</h3>
+      <p>Actualmente curso el Grado Superior en Administración de Sistemas Informáticos en Red (ASIR). También he realizado cursos complementarios de redes, Linux, y seguridad informática.</p>
+    </div>
+
+    <div id="experiencia" class="intro-content" style="display: none;">
+      <h3>💼 Experiencia Profesional</h3>
+      <p>Trabajo como técnico de Help Desk, brindando soporte de primer nivel, resolviendo incidencias de hardware/software, y asistiendo en la configuración de sistemas y redes.</p>
+    </div>
+
+    <div id="sobreMi" class="intro-content" style="display: none;">
+      <h3>🙋‍♂️ Sobre mí</h3>
+      <p>Soy una persona proactiva, curiosa por la tecnología y orientada a la mejora continua. Me interesa la administración de sistemas, la automatización con scripts, y la ciberseguridad.</p>
+    </div>
   </section>
 
   <section id="proyectos">
@@ -46,6 +66,14 @@
   <footer>
     <p>© 2025 Tu Nombre – Portafolio Personal</p>
   </footer>
+
+  <script>
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll('.intro-content');
+      secciones.forEach(sec => sec.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
 
 </body>
 </html>

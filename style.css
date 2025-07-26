@@ -1,4 +1,4 @@
-/* Estilo oscuro con texto blanco */
+/* Estilo oscuro con texto claro */
 body {
   background-color: #111;
   color: #fff;
@@ -51,4 +51,32 @@ footer {
   padding: 1rem;
   background-color: #222;
   color: #888;
+}
+
+/* Botones y secciones de introducción */
+.intro-tabs {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.intro-tabs button {
+  background-color: #222;
+  border: 1px solid #00ffff;
+  color: #00ffff;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.intro-tabs button:hover {
+  background-color: #00ffff;
+  color: #111;
+}
+
+.intro-content {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 10px;
 }
