@@ -41,9 +41,9 @@ Estoy en constante aprendizaje, buscando crecer profesionalmente dentro del áre
 
 ## 📬 Contacto
 
-- 📧 Email: tunombre@email.com  
+- 📧 Email: graul1618@gmail.com  
 - 💼 LinkedIn: [linkedin.com/in/tuperfil](https://linkedin.com/in/tuperfil)  
-- 🧑‍💻 GitHub: [github.com/tuusuario](https://github.com/tuusuario)
+- 🧑‍💻 GitHub: [github.com/raulgg21](https://github.com/raulgg21)
 
 ---
 
