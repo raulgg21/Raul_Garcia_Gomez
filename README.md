@@ -3,7 +3,7 @@
 ¡Bienvenido/a a mi portafolio personal desarrollado con GitHub Pages!  
 Aquí muestro algunos de mis proyectos, habilidades y experiencia como Técnico en Sistemas.
 
-🔗 **Sitio en vivo**: [https://tuusuario.github.io](https://tuusuario.github.io)  
+🔗 **Sitio en vivo**: [https://raulgg21.github.io/Raul_Garcia_Gomez/](https://raulgg21.github.io/Raul_Garcia_Gomez/)  
 _(Reemplaza "tuusuario" con tu nombre de usuario real en GitHub)_
 
 ---
