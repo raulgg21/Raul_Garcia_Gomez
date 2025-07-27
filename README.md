@@ -1,44 +1,53 @@
-# vCard - Personal portfolio
+# 🌐 Mi Portafolio Profesional
 
-![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
-![GitHub stars](https://img.shields.io/github/stars/codewithsadee/vcard-personal-portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/codewithsadee/vcard-personal-portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-[![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
+¡Bienvenido/a a mi portafolio personal desarrollado con GitHub Pages!  
+Aquí muestro algunos de mis proyectos, habilidades y experiencia como Técnico en Sistemas.
 
-vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+🔗 **Sitio en vivo**: [https://tuusuario.github.io](https://tuusuario.github.io)  
+_(Reemplaza "tuusuario" con tu nombre de usuario real en GitHub)_
 
-## Demo
+---
 
-![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+## 🧠 Sobre mí
 
-## Prerequisites
+Soy Técnico en Sistemas con experiencia en soporte técnico, redes, automatización, y desarrollo web básico. Me apasiona la tecnología y me esfuerzo por aprender continuamente.
 
-Before you begin, ensure you have met the following requirements:
+---
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
+## 🛠️ Tecnologías que manejo
 
-## Installing vCard
+- Windows / Linux
+- Redes y cableado estructurado
+- Virtualización (VMware, VirtualBox)
+- HTML / CSS / JS básico
+- Git y GitHub
+- PowerShell / Bash scripting
 
-To install **vCard**, follow these steps:
+---
 
-Linux and macOS:
+## 🚀 Proyectos destacados
 
-```bash
-sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
+| Proyecto | Descripción | Tecnologías | Enlace |
+|---------|-------------|-------------|--------|
+| **Soporte remoto automatizado** | Script de conexión remota usando PowerShell | PowerShell, PSExec | [Ver código](https://github.com/tuusuario/proyecto1) |
+| **Monitor de red** | Monitor de latencia entre nodos con logs automáticos | Bash, Ping, Cron | [Ver código](https://github.com/tuusuario/proyecto2) |
+| **Sitio web institucional** | Página estática para un cliente local | HTML, CSS, GitHub Pages | [Ver demo](https://tuusuario.github.io/proyecto3) |
 
-Windows:
+---
 
-```bash
-git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
+## 📬 Contacto
 
-## Contact
+- 📧 Email: tunombre@email.com  
+- 💼 LinkedIn: [linkedin.com/in/tuperfil](https://linkedin.com/in/tuperfil)  
+- 🧑‍💻 GitHub: [github.com/tuusuario](https://github.com/tuusuario)
 
-If you want to contact me you can reach me at [Twitter](https://www.x.com/codewithsadee_).
+---
 
-## License
+## 📌 Cómo fue hecho este sitio
 
-MIT
+Este sitio fue construido usando HTML y CSS, y está publicado con [GitHub Pages](https://pages.github.com/).  
+Puedes revisar el código fuente en este repositorio.
+
+---
+
+> Gracias por visitar mi portafolio 🙌
